@@ -1,27 +1,27 @@
 // Função para rolar o carrossel na direção especificada
 function scrollCarousel(Carrossel, direction) {
-    const carousel = document.getElementById(Carrossel); // Obtém o elemento do carrossel pelo ID
+    const carousel = document.getElementById(Carrossel); 
     const scrollAmount = 300; // Quantidade de pixels para rolar
 
     if (direction === 'right') {
-        carousel.scrollLeft -= scrollAmount; // Rola o carrossel para a direita
+        carousel.scrollLeft -= scrollAmount; 
     } else if (direction === 'left') {
-        carousel.scrollLeft += scrollAmount; // Rola o carrossel para a esquerda
+        carousel.scrollLeft += scrollAmount;
     }
 }
 
-// Função assíncrona para listar os livros (obtendo dados da API)
+// Função assíncrona para listar os livros 
 async function listaLivro() {
-    const conexao = await fetch("http://localhost:3000/produtos"); // Faz uma requisição para a API
-    const conexaoConvertida = await conexao.json(); // Converte a resposta para JSON
+    const conexao = await fetch("http://localhost:3000/produtos"); 
+    const conexaoConvertida = await conexao.json(); 
 
-    return conexaoConvertida; // Retorna os dados convertidos
+    return conexaoConvertida; // 
 }
 
 // Função assíncrona para criar um novo card de livro (enviando dados para a API)
 async function criaCard(nome, autor, paginas, preco, imagem) {
     const conexao = await fetch("http://localhost:3000/produtos", {
-        method: "POST", // Método HTTP para criar (POST)
+        method: "POST",
         headers: {
             "Content-type": "application/json" // Tipo de conteúdo da requisição
         },
@@ -39,9 +39,9 @@ async function criaCard(nome, autor, paginas, preco, imagem) {
         throw new Error("Não foi possível enviar o seu livro"); // Lança um erro se a requisição falhar
     }
 
-    const conexaoConvertida = await conexao.json(); // Converte a resposta para JSON
+    const conexaoConvertida = await conexao.json(); 
 
-    return conexaoConvertida; // Retorna os dados convertidos
+    return conexaoConvertida; 
 }
 
 // Seleciona o formulário de adição de produto
@@ -49,9 +49,9 @@ const formulario = document.querySelector(".form-adicionar-produto");
 
 // Função assíncrona para criar um novo livro (chamada ao enviar o formulário)
 async function criarLivro(evento) {
-    evento.preventDefault(); // Previene o comportamento padrão do formulário
+    evento.preventDefault();
 
-    // Obtém os valores dos campos de entrada do formulário
+    // valores dos campos de entrada do formulário
     const nome = document.getElementById("nome").value;
     const autor = document.getElementById("autor").value;
     const paginas = document.getElementById("paginas").value;
@@ -62,11 +62,9 @@ async function criarLivro(evento) {
     // Chama a função para criar o livro na API
     await criaCard(nome, autor, paginas, genero, preco, imagem);
 
-    // Redireciona para a página de confirmação de envio
+
     window.location.href = "../envio-concluido.html";
 }
-
-// Adiciona um listener ao formulário para tratar o envio
 formulario.addEventListener("submit", criarLivro);
 
 // Função para criar os cards de produtos
@@ -111,17 +109,15 @@ carrossel.addEventListener("click", function(evento) {
 });
 // Função para exibir uma confirmação de exclusão de card
 function confirmarExclusao() {
-    // Exibe um alerta de confirmação
+    
     const confirmacao = confirm("Tem certeza que deseja excluir este livro?");
 
     if (confirmacao) {
-        // Se confirmado, exibe um alerta de sucesso
+        
         alert("Livro excluído com sucesso!");
     }
 }
 
-
-// Chama a função para listar os produtos ao carregar a página
 listaProdutos();
 
 
