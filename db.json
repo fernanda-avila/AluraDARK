@@ -1,0 +1,77 @@
+{
+  "produtos": [
+    {
+      "nome": "Lady killers: Assas. em série",
+      "autor": "Tori Telfer",
+      "paginas": "235",
+      "genero": "True Crime",
+      "preco": "R$ 49,90",
+      "imagem": "https://imgs.casasbahia.com.br/1558834670/1xg.jpg",
+      "id": 1
+    },
+    {
+      "nome": "Psicose - Limited Edition",
+      "autor": "Robert Bloch",
+      "paginas": "256",
+      "genero": "Terror",
+      "preco": "R$ 59,90",
+      "imagem": "https://4.bp.blogspot.com/-pJh9onOZnAk/WIczDdE4ASI/AAAAAAAAbiM/uQFW1X2cNDcc-6X84FNVlNVXCXJIAle8ACPcB/s1600/Psicose_capa.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Medicina Macabra 3",
+      "autor": "Thomas Morris",
+      "paginas": "272",
+      "genero": "True Crime",
+      "preco": "R$ 53,95",
+      "imagem": "https://a-static.mlcdn.com.br/800x560/livro-medicina-macabra-3/magazineluiza/236476500/0b83c5c5a9d2ec6647e32eb95c67f839.jpg",
+      "id": 3
+    },
+    {
+      "nome": "Drácula - Dark Edition",
+      "autor": "Bram Stoker",
+      "paginas": "448",
+      "genero": "Terror",
+      "preco": "R$ 89,90",
+      "imagem": "https://i1.wp.com/cantodogargula.com.br/wp-content/uploads/2020/10/Dracula-Bram-Stoker-Darkside-Books-Canto-do-Gargula.jpg?w=334&ssl=1",
+      "id": 4
+    },
+    {
+      "nome": "Casos de Família",
+      "autor": "Ilana Casoy",
+      "paginas": "528",
+      "genero": "Nacional",
+      "preco": "R$ 99,90",
+      "imagem": "https://2.bp.blogspot.com/-o-2xKvDTq9k/WFRqu7UnZ4I/AAAAAAAAfXY/2rjz9zvrwtwzB7dVqiw9Yuzefg32rjQ8QCLcB/s320/Casos%2Bde%2BFam%25C3%25ADlia.jpg",
+      "id": 5
+    },
+    {
+      "nome": "Columbine",
+      "autor": "Dave Cullen",
+      "paginas": "464",
+      "genero": "True Crime",
+      "preco": "R$ 89,90",
+      "imagem": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348118200i/6398203._UY200_.jpg",
+      "id": 6
+    },
+    {
+      "nome": "Serial Killers - Anatomia do mal",
+      "autor": "Harold Schechter",
+      "paginas": "496",
+      "genero": "True Crime",
+      "preco": "R$ 89,50",
+      "imagem": "https://th.bing.com/th/id/R.3dfbf06bbec24786baf46595d6aaf45e?rik=n48zSdvQA4%2bvcw&riu=http%3a%2f%2fleitorcabuloso.com.br%2fwp-content%2fuploads%2f2014%2f03%2fserial-killers-2.jpg&ehk=AimP6hXamOO6yk%2frt8EqbnsiDgog2FSmcjzJt5K3lGc%3d&risl=&pid=ImgRaw&r=0",
+      "id": 7
+    },
+    {
+      "nome": "Frankenstein",
+      "autor": "Mary Shelley",
+      "paginas": "272",
+      "genero": "Terror",
+      "preco": "R$ 69,90",
+      "imagem": "https://i.pinimg.com/736x/9a/3f/02/9a3f02b2b5a9fcd90804c049fb442847.jpg",
+      "id": 8
+    }
+       
+    ]
+}

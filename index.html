@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDARK</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/163b3848e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+       <img src="img/PinClipart.com_float-clipart_3608453.png" alt="Logo AluraDark" class="img-header">
+       <h1 class="header-titulo"><span class="thin">Alura</span><span class="bold">DARK</span></h1>
+       <nav class="menu-nav">
+        <a href="#Carrossel" class="nav-link thin">Livros a venda</a>
+        <a href="#adicionar-livro" class="nav-link thin">Adicionar livro</a>
+    </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="https://img.freepik.com/fotos-gratis/arte-digital-com-paisagem-e-arquitetura-da-cidade_23-2151065704.jpg?t=st=1718284858~exp=1718288458~hmac=d60147e4e6fa962d23c715f2632a9559a658314cbd711fc38eb6a2107dd26c3f&w=826" alt="" class="imagem-banner">
+        </div>
+
+        <div class="generos">
+            <span class="genero-item" data-categoria="True Crime">
+                <img src="https://darkside.blog.br/wp-content/uploads/2022/09/Anatomia-do-mal-Post-02-1024x1024.png" alt="" class="genero-img">
+                <h2 class="titulo-genero thin">True Crime</h2>
+            </span>
+            <span class="genero-item" data-categoria="Terror">
+                <img src="https://darkside.vtexassets.com/arquivos/ids/169625/197-2-dracula-de-bram-stoker-dark-edition-4.jpg?v=637014802401900000" alt="" class="genero-img">
+                <h2 class="titulo-genero thin">Terror</h2>
+            </span>
+            <span class="genero-item"  data-categoria="Nacional">
+                <img src="https://darkside.vtexassets.com/arquivos/ids/167397/117-casos-de-familia-4.jpg?v=636802505674000000" alt="" class="genero-img">
+                <h2 class="titulo-genero thin">Nacionais</h2>
+            </span>
+            <span class="genero-item" data-categoria="Magia">
+                <img src="https://darkside.vtexassets.com/arquivos/ids/173543/bruxa-natural-1.png?v=637520339522170000" alt="" class="genero-img">
+                <h2 class="titulo-genero thin">Magia</h2>
+            </span>
+        </div>
+        <h2 class="produtos-titulo">Livros à venda:</h2>
+        <div class="container">
+            <div class="produtos-box" id="Carrossel">
+                <!-- Cards de produtos serão inseridos aqui -->
+            </div>
+            <button class="fa-solid fa-angle-left" id="adicionar-livro" onclick="scrollCarousel('Carrossel', 'left')"></button>
+            <button class="fa-solid fa-angle-right" onclick="scrollCarousel('Carrossel', 'right')"></button>
+        </div>
+        
+        <div class="accordion-container">
+            <input type="checkbox" id="accordion-toggle" style="display:none;">
+            <label for="accordion-toggle" class="accordion-label fa-solid fa-plus"></label>
+            <div class="accordion-content">
+                <img src="img/33.png" alt="" class="imagem-form">
+                <div class="form-adicionar-produto">
+                    <h2 class="form-titulo">Adicionar produto:</h2>
+                    <form>
+                        <input type="text" name="nome" id="nome" placeholder="nome do produto">
+                        <input type="text" name="autor" id="autor" placeholder="autor do produto">
+                        <input type="text" name="num-pag" id="paginas" placeholder="número de páginas">
+                        <input type="text" name="genero" id="genero" placeholder="gênero do produto">
+                        <input type="text" name="preco" id="preco" placeholder="preço do produto">
+                        <input type="text" name="imagem" id="imagem" placeholder="imagem do produto">
+                        <button class="form-btn">Adicionar</button>
+                        <button class="form-btn" type="reset">Limpar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <h2 class="titulo-footer"><span class="thin">Alura</span><span class="bold">DARK</span></h2>
+        <p class="subtitulo-footer">Desenvolvido por Fernanda Avila</p>
+        <p class="subtitulo-footer thin">ALURA LATAM</p>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script src="./filtro.js"></script>
+</body>
+</html>
