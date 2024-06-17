@@ -71,7 +71,159 @@
       "preco": "R$ 69,90",
       "imagem": "https://i.pinimg.com/736x/9a/3f/02/9a3f02b2b5a9fcd90804c049fb442847.jpg",
       "id": 8
+    },
+    {
+      "nome": "O Iluminado",
+      "autor": "Stephen King",
+      "paginas": "464",
+      "genero": "Terror",
+      "preco": "R$ 69,90",
+      "imagem": "https://m.media-amazon.com/images/I/81Q+pJi4NjL._SY342_.jpg",
+      "id": 9
+    },
+    {
+      "nome": "O Silêncio dos Inocentes",
+      "autor": "Thomas Harris",
+      "paginas": "320",
+      "genero": "Terror",
+      "preco": "R$ 69,90",
+      "imagem": "https://th.bing.com/th/id/OIP.nTBqN3CA8uXfhZvMHn2p0QHaK_?rs=1&pid=ImgDetMain",
+      "id": 10
+    },
+    {
+      "nome": "Serial Killers: Louco ou Cruel?",
+      "autor": "Ilana Casoy",
+      "paginas": "320",
+      "genero": "Nacional",
+      "preco": "R$ 59,90",
+      "imagem": "https://darkside.vteximg.com.br/arquivos/ids/190957-1000-1000/Louco-ou-Cruel-capa.png?v=638042025286400000",
+      "id": 11
+    },
+    {
+      "nome": "O Quinto Mandamento",
+      "autor": "Ilana Casoy",
+      "paginas": "352",
+      "genero": "Nacional",
+      "preco": "R$ 69,90",
+      "imagem": "https://images.dlivros.org/Ilana-Casoy/quinto-mandamento-caso-von-richthofen-ilana-casoy_large.webp",
+      "id": 12
+    },
+    {
+      "nome": "Arquivos de Serial Killers: Made in Brazil",
+      "autor": "Ilana Casoy",
+      "paginas": "400",
+      "genero": "Nacional",
+      "preco": "R$ 79,90",
+      "imagem": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1456105891i/29240552._UY630_SR1200,630_.jpg",
+      "id": 13
+    },
+    {
+      "nome": "O Exorcista",
+      "autor": "William Peter Blatty",
+      "paginas": "368",
+      "genero": "Terror",
+      "preco": "R$ 69,90",
+      "imagem": "https://www.oficialhostgeek.com.br/wp-content/uploads/2020/09/zzzz-8-scaled.jpg",
+      "id": 14
+    },
+    {
+      "nome": "O Colecionador",
+      "autor": "John Fowles",
+      "paginas": "288",
+      "genero": "Terror",
+      "preco": "R$ 59,90",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_906684-MLU72894559374_112023-O.webp",
+      "id": 15
+    },
+    {
+      "nome": "O Demonologista",
+      "autor": "Andrew Pyper",
+      "paginas": "320",
+      "genero": "Terror",
+      "preco": "R$ 59,90",
+      "imagem": "https://imgs.casasbahia.com.br/1520397339/1xg.jpg",
+      "id": 16
+    },
+    {
+      "nome": "Bruxa Natural",
+      "autor": "Arin Murphy-Hiscock",
+      "paginas": "256",
+      "genero": "Magia",
+      "preco": "R$ 89,90",
+      "imagem": "https://m.media-amazon.com/images/I/91iOSH8AQYL._AC_UF1000,1000_QL80_.jpg",
+      "id": 17
+    },
+    {
+      "nome": "A Bíblia Clássica do Tarot",
+      "autor": "Rachel Pollack",
+      "paginas": "400",
+      "genero": "Magia",
+      "preco": "R$ 99,90",
+      "imagem": "https://darkside.vtexassets.com/arquivos/ids/192038/biblia-taro-new-thumb.png?v=638223502195730000",
+      "id": 18
+    },
+    {
+      "nome": "Grimório das Bruxas",
+      "autor": "Ronald Hutton",
+      "paginas": "400",
+      "genero": "Magia",
+      "preco": "R$ 90,90",
+      "imagem": "https://darkside.vtexassets.com/arquivos/ids/173466/grimorio-das-bruxas.jpg?v=637509833519900000",
+      "id": 19
+    },
+    {
+      "id": "6fc0",
+      "nome": "O Ano das Bruxas",
+      "autor": "Alexis Henderson",
+      "paginas": "368",
+      "genero": {},
+      "preco": "Magia",
+      "imagem": "99,90"
+    },
+    {
+      "id": "791f",
+      "nome": "O Ano das Bruxas",
+      "autor": "Alexis Henderson",
+      "paginas": "368",
+      "genero": "Magia",
+      "preco": "79,90",
+      "imagem": "https://m.media-amazon.com/images/I/91mZC1JGz6L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "82a2",
+      "nome": "O Ano das Bruxas",
+      "autor": "Alexis Henderson",
+      "paginas": "368",
+      "genero": "Magia",
+      "preco": "99,90",
+      "imagem": "https://m.media-amazon.com/images/I/91mZC1JGz6L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "2f0a",
+      "nome": "O Ano das Bruxas",
+      "autor": "Alexis Henderson",
+      "paginas": "368",
+      "genero": "Magia",
+      "preco": "99.90",
+      "imagem": "https://m.media-amazon.com/images/I/91mZC1JGz6L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "5c27",
+      "nome": "Histórias Fantasmas",
+      "autor": "Borja González",
+      "paginas": "128",
+      "genero": "Terror",
+      "preco": "79,90",
+      "imagem": "https://darkside.vtexassets.com/arquivos/ids/195168/historias_fantasmas_mini_capa.png?v=638496477080770000"
+    },
+    {
+      "id": "7014",
+      "nome": "Histórias Fantasmas",
+      "autor": "Borja González",
+      "paginas": "128",
+      "genero": "Terror",
+      "preco": "79,90",
+      "imagem": "https://darkside.vtexassets.com/arquivos/ids/195168/historias_fantasmas_mini_capa.png?v=638496477080770000"
     }
-       
-    ]
+  ]
 }

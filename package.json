@@ -7,5 +7,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Este é um projeto desenvolvido como parte do programa ONE da Oracle em parceria com a Alura, na categoria de Front-end. O AluraDARK é uma aplicação web para venda e gerenciamento de livros, com funcionalidades como adicionar novos livros, listar, filtrar por categoria e remover livros."
 }

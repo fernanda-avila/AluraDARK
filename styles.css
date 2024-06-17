@@ -88,6 +88,7 @@ body {
     display: flex;
     padding: 2rem;
     justify-content: center;
+    cursor: pointer;
 }
 
 .genero-img {
@@ -103,6 +104,7 @@ body {
     transition: transform 0.5s;
     border: 1px solid #fffcfc73;
     padding: 1rem;
+    cursor: pointer;
 }
 .genero-item {
     display: flex;
@@ -120,6 +122,25 @@ body {
 .genero-item:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
+}
+
+.botao-mostrar-todos {
+    border: none;
+    background-color: #000;
+    color: #fffcfc73;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+
+}
+
+.botao-mostrar-todos:hover {
+    color: #fffcfc;
+    background-color: #000;
+    transition: 0.5s;
+    text-transform: uppercase;
 }
 
 .container {

@@ -19,20 +19,24 @@ async function listaLivro() {
 }
 
 // Função assíncrona para criar um novo card de livro (enviando dados para a API)
-async function criaCard(nome, autor, paginas, preco, imagem) {
+async function criaCard(nome, autor, paginas, genero, preco, imagem) {
+    const payload = {
+        nome: nome,
+        autor: autor,
+        paginas: paginas,
+        genero: genero,
+        preco: preco,
+        imagem: imagem
+    };
+
+    console.log("Payload enviado para a API:", payload);
+
     const conexao = await fetch("http://localhost:3000/produtos", {
         method: "POST",
         headers: {
             "Content-type": "application/json" // Tipo de conteúdo da requisição
         },
-        body: JSON.stringify({
-            nome: nome,
-            autor: autor,
-            paginas: paginas,
-            genero: genero,
-            preco: preco,
-            imagem: imagem
-        }) // Corpo da requisição com os dados do livro
+        body: JSON.stringify(payload) // Corpo da requisição com os dados do livro
     });
 
     if (!conexao.ok) {
@@ -40,6 +44,8 @@ async function criaCard(nome, autor, paginas, preco, imagem) {
     }
 
     const conexaoConvertida = await conexao.json(); 
+
+    console.log("Resposta da API:", conexaoConvertida);
 
     return conexaoConvertida; 
 }
@@ -59,9 +65,12 @@ async function criarLivro(evento) {
     const preco = document.getElementById("preco").value;
     const imagem = document.getElementById("imagem").value;
 
+    console.log("Valores do formulário:", {
+        nome, autor, paginas, genero, preco, imagem
+    });
+
     // Chama a função para criar o livro na API
     await criaCard(nome, autor, paginas, genero, preco, imagem);
-
 
     window.location.href = "../envio-concluido.html";
 }
@@ -119,6 +128,3 @@ function confirmarExclusao() {
 }
 
 listaProdutos();
-
-
-

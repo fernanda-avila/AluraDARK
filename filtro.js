@@ -1,5 +1,3 @@
-
-
 // Função para filtrar os livros por categoria
 function filtrarPorCategoria(categoria) {
     const carrossel = document.getElementById("Carrossel");
@@ -7,15 +5,17 @@ function filtrarPorCategoria(categoria) {
 
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
-        const genero = card.querySelector(".produto-card-genero").textContent;
+        const genero = card.querySelector(".produto-card-genero").textContent.trim();
 
-        if (genero !== categoria) {
+        if (categoria === "Mostrar Todos" || genero === categoria) {
+            card.style.display = "block"; 
+        } else {
             card.style.display = "none"; 
         }
     }
 }
 
-// Função para adicionar listeners aos botões de categoria
+
 function adicionarListenersCategoria() {
     const botoesCategoria = document.querySelectorAll(".genero-item");
 
@@ -25,12 +25,17 @@ function adicionarListenersCategoria() {
             filtrarPorCategoria(categoria);
         });
     });
+
+
+    const botaoMostrarTodos = document.getElementById("mostrar-todos");
+    botaoMostrarTodos.addEventListener("click", () => {
+        filtrarPorCategoria("Mostrar Todos");
+    });
 }
 
-// Função para inicializar o script
+
 function inicializar() {
     adicionarListenersCategoria();
-    filtrarPorCategoria(); 
 }
 
-inicializar();
+window.onload = inicializar;
