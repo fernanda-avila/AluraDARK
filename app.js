@@ -9,6 +9,23 @@ function scrollCarousel(Carrossel, direction) {
         carousel.scrollLeft += scrollAmount;
     }
 }
+// Função para limpar o formulário
+function limparFormulario() {
+    document.getElementById("nome").value = "";
+    document.getElementById("autor").value = "";
+    document.getElementById("paginas").value = "";
+    document.getElementById("genero").value = "";
+    document.getElementById("preco").value = "";
+    document.getElementById("imagem").value = "";
+}
+
+// Seleciona o botão de limpar if it exists
+const botaoLimpar = document.getElementById("limpar");
+
+// Check if the button exists before adding the event listener
+if (botaoLimpar) {
+    botaoLimpar.addEventListener("click", limparFormulario);
+}
 
 // Função assíncrona para listar os livros 
 async function listaLivro() {
