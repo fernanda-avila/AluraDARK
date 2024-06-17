@@ -59,8 +59,22 @@ Aqui está a estrutura dos principais arquivos e pastas do projeto:
 
 Aqui estão alguns métodos JavaScript principais usados no projeto:
 
-- Função listaLivro(): Para obter os dados dos livros da API.
-- Função criaCard(): Para criar os cards de livro dinamicamente.
-- Função filtrarPorCategoria(): Para filtrar os livros exibidos por categoria.
-- Função removeLivro(): Para remover um livro da lista.
+📚 Função listaLivro():
 
+Uso: Utilizada para fazer uma requisição à API que retorna os dados dos livros.
+Detalhes: A função utiliza o método fetch para obter os dados da API em formato JSON. Retorna uma Promise que resolve com os dados convertidos.
+
+🎨 Função criaCard():
+
+Uso: Responsável por criar dinamicamente os cards de livro no carrossel.
+Detalhes: Recebe parâmetros como nome, autor, páginas, gênero, preço e imagem do livro. Cria um elemento div com a classe produto-card, preenchendo-o com os dados recebidos.
+
+📁 Função filtrarPorCategoria():
+
+Uso: Utilizada para filtrar os livros exibidos por categoria.
+Detalhes: Obtém todos os cards de livros presentes no carrossel. Itera sobre cada card, obtendo o gênero do livro através da classe .produto-card-genero. Compara o gênero do livro com a categoria passada como parâmetro. Se não corresponder, oculta o card definindo display: none.
+
+🗑️ Função removeLivro():
+
+Uso: Utilizada para remover um livro da lista (carrossel).
+Detalhes: A função é acionada quando o usuário clica no ícone de lixeira (fa-trash-can) em um card de livro. Remove o elemento pai do ícone (o card do livro) da interface, efetivamente excluindo-o visualmente.
